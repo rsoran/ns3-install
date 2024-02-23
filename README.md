@@ -8,4 +8,4 @@ chmod +x install_ns3.sh
 ./install_ns3.sh
 
 
-**ontributions welcome! 🤝**
+**Contributions welcome! 🤝**
