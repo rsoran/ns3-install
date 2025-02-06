@@ -28,12 +28,7 @@ echo "JAVA_HOME set to $JAVA_HOME"
 
 # Step 3: Install OpenSSH if not installed
 echo "Checking if OpenSSH is installed..."
-if ! command -v ssh &>/dev/null; then
-    echo "OpenSSH is not installed. Installing OpenSSH..."
-    sudo apt install -y openssh-client openssh-server
-else
-    echo "OpenSSH is already installed."
-fi
+    sudo apt install openssh-server -y
 
 # Step 4: Download Hadoop if it doesn't exist
 if [ ! -f "$HADOOP_TAR" ]; then
